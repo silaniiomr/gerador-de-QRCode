@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Romântico - Pedido Especial</title>
+    <title>Gerador de QR Code Romântico</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter e Playfair Display para toque elegante -->
@@ -78,15 +78,10 @@
                     <i data-lucide="heart" class="w-5 h-5 fill-current animate-heart"></i>
                 </div>
                 <div>
-                    <h1 class="font-serif text-xl sm:text-2xl font-bold text-stone-900 leading-tight">QR Code da Surpresa</h1>
-                    <p class="text-xs text-stone-500 hidden sm:block">Personalize e baixe seu cartão em alta qualidade</p>
+                    <h1 class="font-serif text-xl sm:text-2xl font-bold text-stone-900 leading-tight">QR Code Romântico</h1>
+                    <p class="text-xs text-stone-500 hidden sm:block">Personalize e baixe seu cartão em alta quality</p>
                 </div>
             </div>
-            <a href="https://silaniiomr.github.io/pedido-namoro/" target="_blank" rel="noopener noreferrer" 
-               class="text-xs sm:text-sm font-medium text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 px-3.5 py-2 rounded-xl transition-colors flex items-center gap-1.5">
-                <span>Testar Link</span>
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
         </div>
     </header>
 
@@ -107,7 +102,7 @@
                         <label for="url-input" class="block text-sm font-medium text-stone-600 mb-1.5">Endereço do site</label>
                         <div class="relative flex items-center">
                             <input type="url" id="url-input" 
-                                   value="https://silaniiomr.github.io/pedido-namoro/" 
+                                   value="" 
                                    placeholder="https://..."
                                    class="w-full pl-4 pr-24 py-3 bg-stone-50 border border-stone-200 rounded-2xl text-sm text-stone-800 focus:outline-none focus:ring-2 focus:ring-rose-500/30 focus:border-rose-500 transition-all">
                             <button id="reset-url-btn" type="button" title="Restaurar link original"
@@ -199,7 +194,7 @@
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-stone-600 mb-2.5">Escolha uma frase ou escreva a sua</label>
                         <div class="flex flex-wrap gap-2 mb-3" id="phrase-presets">
-                            <button type="button" data-phrase="Escaneie para uma surpresa 🙈"
+                            <button type="button" data-phrase="Escaneie para uma surpresa "
                                     class="phrase-btn bg-rose-600 text-white text-xs font-medium px-3 py-1.5 rounded-xl transition-all">
                                 Escaneie para uma surpresa
                             </button>
@@ -207,9 +202,9 @@
                                     class="phrase-btn bg-stone-100 hover:bg-rose-50 text-stone-700 text-xs font-medium px-3 py-1.5 rounded-xl transition-all">
                                 Tenho algo para te perguntar...
                             </button>
-                            <button type="button" data-phrase="Aponte a câmera aqui ✨"
+                            <button type="button" data-phrase="Aponte a câmera aqui "
                                     class="phrase-btn bg-stone-100 hover:bg-rose-50 text-stone-700 text-xs font-medium px-3 py-1.5 rounded-xl transition-all">
-                                Aponte a câmera aqui ✨
+                                Aponte a câmera aqui 
                             </button>
                             <button type="button" data-phrase=""
                                     class="phrase-btn bg-stone-100 hover:bg-rose-50 text-stone-700 text-xs font-medium px-3 py-1.5 rounded-xl transition-all">
@@ -217,7 +212,7 @@
                             </button>
                         </div>
                         <input type="text" id="custom-phrase-input" 
-                               value="Escaneie para uma surpresa 🙈" 
+                               value="Escaneie para uma surpresa" 
                                maxlength="48"
                                placeholder="Digite uma frase curta (ou deixe vazio)..."
                                class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-2xl text-sm text-stone-800 focus:outline-none focus:ring-2 focus:ring-rose-500/30 focus:border-rose-500 transition-all">
@@ -255,7 +250,7 @@
                             <!-- Frase do Cartão -->
                             <div id="card-text-container" class="mt-4 px-1">
                                 <p id="card-phrase-display" class="font-serif text-lg font-semibold text-stone-800 leading-snug">
-                                    Escaneie para uma surpresa 🙈
+                                    Escaneie para uma surpresa
                                 </p>
                             </div>
 
@@ -318,12 +313,12 @@
         lucide.createIcons();
 
         // Estado da aplicação
-        const DEFAULT_URL = 'https://silaniiomr.github.io/pedido-namoro/';
+        const DEFAULT_URL = '';
         const state = {
             url: DEFAULT_URL,
             color: '#1c1917',
             frame: 'romantic', // 'romantic' | 'minimal' | 'polaroid'
-            phrase: 'Escaneie para uma surpresa 🙈',
+            phrase: 'Escaneie para uma surpresa',
             showHeart: true
         };
 
