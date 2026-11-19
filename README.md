@@ -1,52 +1,31 @@
-# ❤️ Gerador de QR Code Romântico
+# Gerador de QR Code Profissional
 
-Uma aplicação web interativa, elegante e minimalista desenvolvida para gerar, personalizar, baixar em alta resolução ou imprimir cartões com QR Code para pedidos de namoro e surpresas românticas.
+Aplicação web leve e responsiva em HTML5, CSS (Tailwind CSS) e JavaScript puro para criar, personalizar, imprimir e baixar **QR Codes em alta resolução (1080px de largura)** com correção de erros **Nível H (30% de redundância)**.
 
----
+## Funcionalidades
 
-## ✨ Funcionalidades
+- **Geração em tempo real:** Atualiza o QR Code automaticamente conforme o usuário digita uma URL, link ou texto.
+- **Paleta de cores de alto contraste:** Opções pré-definidas (*Preto Clássico*, *Azul Royal*, *Verde Esmeralda* e *Grafite*) pensadas para leitura rápida por câmeras.
+- **Ícone central opcional (Nível H):** Insere um ícone de link no centro do código mantendo margem de segurança para leitura.
+- **Estilos de moldura e rótulos:** Alterna entre *Cartão Moderno*, *Minimalista Clean* e *Placa / Display*, com sugestões rápidas (*Escaneie o QR Code*, *Acesse nosso site*, *Aponte a câmera aqui*, *Conecte-se ao Wi-Fi*, *Sem texto*) ou texto personalizado de até 48 caracteres.
+- **Exportação PNG em alta resolução:** Gera um cartão completo renderizado em `<canvas>` (`1080px` de largura) pronto para impressão ou compartilhamento.
+- **Impressão direta:** Layout adaptado com `@media print` para imprimir apenas a área do cartão.
 
-- **Geração Instantânea e em Tempo Real:** O QR Code é atualizado dinamicamente conforme você edita o link, as cores ou a mensagem.
-- **Alta Tolerância a Erros (Nível H):** Configurado com 30% de redundância de dados (`QRCode.CorrectLevel.H`), garantindo leitura rápida e confiável pela câmera de qualquer smartphone — mesmo com o ícone de coração no centro.
-- **Personalização Visual Completa:**
-  - **Paleta de Cores de Alto Contraste:** *Preto Clássico*, *Vermelho Paixão*, *Vinho Elegante* e *Rosa Escuro*.
-  - **Detalhe Central:** Opção de ativar ou desativar o ícone de coração estilizado no centro do QR Code.
-  - **Estilos de Moldura:** *Cartão Romântico* (com ornamentos), *Minimalista Clean* e *Estilo Polaroid*.
-  - **Mensagens Personalizáveis:** Sugestões prontas com um clique ou campo de texto livre para escrever sua própria frase.
-- **Exportação em Alta Definição (PNG):** Renderização avançada via HTML5 Canvas em escala $3\times$ (alta nitidez e proporção ideal para impressão), combinando perfeitamente a moldura, o QR Code e a frase romântica.
-- **Modo de Impressão Otimizado:** Folha de estilos `@media print` dedicada que isola e centraliza apenas o cartão na página, economizando tinta e papel.
+## Tecnologias utilizadas
 
----
+- **HTML5 & CSS3** com **Tailwind CSS** (via CDN)
+- **JavaScript (ES6+)** com **HTML5 Canvas**
+- **QRCode.js** para geração da matriz do QR Code
+- **Lucide Icons** para ícones da interface
 
-## 🛠️ Tecnologias Utilizadas
+## Como executar
 
-- **HTML5 & JavaScript (ES6+):** Estrutura semântica e manipulação avançada de Canvas 2D.
-- **Tailwind CSS (via CDN):** Estilização responsiva, moderna e paleta de cores temática.
-- **QRCode.js:** Biblioteca confiável para geração da matriz do QR Code em alta precisão.
-- **Lucide Icons:** Ícones vetoriais leves e elegantes.
-- **Google Fonts:** Tipografia combinando *Playfair Display* (títulos e frases românticas) e *Inter* (interface de usuário).
+1. Salve o código da aplicação como `index.html`.
+2. Abra o arquivo `index.html` diretamente em qualquer navegador moderno (Chrome, Edge, Firefox, Safari) ou sirva via servidor HTTP local / hospedagem estática (por exemplo, cPanel, GitHub Pages, Netlify ou Vercel).
+3. Não requer instalação de dependências nem build backend.
 
----
+## Boas práticas de leitura e impressão
 
-## 🚀 Como Usar
-
-Como o projeto foi construído em um **único arquivo autocontido** (`index.html`), não há necessidade de instalar dependências complexas ou configurar servidores locais:
-
-1. **Baixe ou clone** o arquivo `index.html` para o seu computador.
-2. **Abra o arquivo** dando um duplo clique nele (ele abrirá diretamente no seu navegador padrão: Chrome, Edge, Safari, Firefox, etc.).
-3. **Personalize** a cor, o estilo da moldura, o link de destino e a frase desejada diretamente nos controles da interface.
-4. **Teste com seu celular** apontando a câmera para a prévia na tela antes de exportar.
-5. Clique em **"Baixar QR Code (PNG)"** para salvar a imagem final ou em **"Imprimir Cartão"**.
-
----
-
-## 💡 Dicas para a Surpresa
-
-- **Tamanho mínimo na impressão:** Caso vá imprimir para colocar em um buquê, caixa de bombons ou envelope, garanta que o código impresso tenha pelo menos **$3\text{ cm} \times 3\text{ cm}$**.
-- **Escolha do papel:** Prefira papel sulfite comum ou papel fosco para evitar que o brilho da luz reflita e atrapalhe o foco da câmera do celular.
-
----
-
-## 📄 Licença
-
-Este projeto é de uso livre para fins pessoais e românticos. Boa sorte na surpresa! 🌹
+- **Teste prévio:** Escaneie a prévia na tela com a câmera do celular antes de imprimir ou publicar.
+- **Tamanho mínimo:** Para cartões, folhetos ou balcões, utilize ao menos **2,5 cm × 2,5 cm**.
+- **Superfície:** Prefira papel fosco ou evite brilho excessivo sobre o código para não dificultar o foco da câmera.
